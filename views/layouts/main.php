@@ -6,9 +6,10 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
+
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => 'favicon.png']);
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -23,44 +24,56 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Tequeño Mucho',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
+        'brandLabel' => Html::img('images/logo-banner.png', ['class' => 'img-fluid logo-banner']),
+        'brandUrl'   => Yii::$app->homeUrl,
+        'options'    => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Galería', 'url' => ['/site/gallery']],
-            ['label' => 'Quienes Somos', 'url' => ['/site/about']],
-            ['label' => 'Contacto', 'url' => ['/site/contact']],
+        'options' => ['class' => 'navbar-nav navbar-right list-inline flex-row'],
+        'items'   => [
+            [
+                'label' => 'Inicio',
+                'url' => ['/site/index'],
+                'options' => ['class' => 'list-inline-item'],
+            ],
+            [
+                'label' => 'Galería',
+                'url' => ['/site/gallery'],
+                'options' => ['class' => 'list-inline-item'],
+            ],
+            [
+                'label' => 'Quienes Somos',
+                'url' => ['/site/about'],
+                'options' => ['class' => 'list-inline-item'],
+            ],
+            [
+                'label' => 'Contacto',
+                'url' => ['/site/contact'],
+                'options' => ['class' => 'list-inline-item'],
+            ],
         ],
     ]);
     NavBar::end();
     ?>
-
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-    </div>
+    <?= $content ?>
 </div>
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Tequeño Mucho <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p>© <?= date('Y') ?> Tequeño Mucho. Todos los derechos reservados.</p>
+		<p>Creado por <a href="https://github.com/JDSDigital" target="_blank">JDSDigital</a></p>
+		<p>
+            <a href="https://github.com/JDSDigital" target="_blank">
+                <?= Html::img('images/GitHub-Mark-Light-32px.png') ?>
+            </a>
+        </p>
     </div>
 </footer>
-
 <?php $this->endBody() ?>
 </body>
 </html>
