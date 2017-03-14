@@ -11,7 +11,9 @@ $this->title = 'Tequeño Mucho';
 <div class="container">
     <div class="site-index">
         <div class="body-content">
-            <?= Html::img('images/logo.png', ['class' => 'wow fadeInLeft lazy', 'data-wow-delay' => '0.5s']) ?>
+            <div class="row justify-content-center">
+                <?= Html::img('images/logo.png', ['class' => 'wow fadeIn lazy', 'data-wow-delay' => '0.5s']) ?>
+            </div>
         </div>
     </div>
 </div>
