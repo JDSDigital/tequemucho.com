@@ -1,6 +1,9 @@
 html,
 body {
     height: 100%;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    /*font-family: 'Arsenal', sans-serif;*/
+    /*font-family: 'Lora', serif;*/
 }
 body {
     background-color: #000;
@@ -16,6 +19,10 @@ body {
 .wrap > .container {
     padding: 0;
 }
+.wrap > .container h1 {
+    color : #FFF;
+    margin-top: 20px;
+}
 .wrap > .container p {
     color : #FFF;
     padding: 20px 45px 20px 45px;
@@ -23,6 +30,10 @@ body {
 
 .row {
     margin: 0;
+}
+
+.m20 {
+    margin: 20px;
 }
 
 .footer {

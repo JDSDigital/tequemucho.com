@@ -24,17 +24,22 @@ $this->title = 'Tequeño Mucho';
                     <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
                 </p>
             </div>
-            <div class="row">
-                <?= Html::img('images/teque01.jpg', [
-                    'class'          => 'wow fadeInLeft lazy img-fluid',
-                    'data-wow-delay' => '0.5s',
-                    'alt'            => Html::encode('Tequeño Mucho'),
-                ]) ?>
+            <div class="row justify-content-center">
                 <?= Html::img('images/teque02.jpg', [
-                    'class'          => 'wow fadeInRight lazy img-fluid',
+                    'class'          => 'wow fadeInLeft lazy img-fluid m20',
                     'data-wow-delay' => '0.5s',
                     'alt'            => Html::encode('Tequeño Mucho'),
                 ]) ?>
+                <?= Html::img('images/teque03.jpg', [
+                    'class'          => 'wow fadeInRight lazy img-fluid m20',
+                    'data-wow-delay' => '0.5s',
+                    'alt'            => Html::encode('Tequeño Mucho'),
+                ]) ?>
+            </div>
+            <div class="row justify-content-center">
+                <p>
+                    <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
+                </p>
             </div>
         </div>
     </div>
