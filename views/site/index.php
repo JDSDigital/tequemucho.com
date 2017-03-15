@@ -19,8 +19,8 @@ $this->title = 'Tequeño Mucho';
                 ]) ?>
             </div>
             <div class="row justify-content-center">
-                <h1><?= Html::encode('Lorem Ipsum') ?></h1>
-                <p>
+                <h1 class="wow fadeIn lazy"><?= Html::encode('Lorem Ipsum') ?></h1>
+                <p class="wow fadeIn lazy">
                     <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
                 </p>
             </div>
@@ -37,7 +37,7 @@ $this->title = 'Tequeño Mucho';
                 ]) ?>
             </div>
             <div class="row justify-content-center">
-                <p>
+                <p class="wow fadeIn lazy">
                     <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
                 </p>
             </div>

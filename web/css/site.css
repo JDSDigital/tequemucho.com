@@ -20,12 +20,20 @@ body {
     padding: 0;
 }
 .wrap > .container h1 {
-    color : #FFF;
+    color : #DDD;
     margin-top: 20px;
+    /*font-family: 'Source Sans Pro', sans-serif !important;*/
+    font-family: 'Arsenal', sans-serif !important;
+    /*font-family: 'Lora', serif !important;*/
+    font-size: 4em;
 }
 .wrap > .container p {
-    color : #FFF;
+    color : #DDD;
     padding: 20px 45px 20px 45px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    /*font-family: 'Arsenal', sans-serif !important;*/
+    /*font-family: 'Lora', serif !important;*/
+    font-size: 1.2em;
 }
 
 .row {
@@ -34,6 +42,16 @@ body {
 
 .m20 {
     margin: 20px;
+}
+
+.control-label {
+    color: #DDD;
+}
+#contact-form {
+    margin-left: 30px;
+}
+#contactform-verifycode {
+    margin-left: 30px;
 }
 
 .footer {
@@ -179,4 +197,10 @@ a.desc:after {
 }
 .body-content {
     background-color: #101010;
+}
+.site-contact {
+    background-color: #101010;
+}
+.form-control {
+    border: 1px solid #DDD;
 }
