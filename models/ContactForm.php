@@ -39,7 +39,7 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
-            'mail'       => 'Nombre',
+            'name'       => 'Nombre',
             'email'      => 'Correo',
             'subject'    => 'Asunto',
             'body'       => 'Mensaje',
