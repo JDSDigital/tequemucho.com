@@ -12,7 +12,7 @@ $this->title = 'Tequeño Mucho';
     <div class="site-index">
         <div class="body-content">
             <div class="row justify-content-center">
-                <?= Html::img('images/logo.png', [
+                <?= Html::img(Yii::getAlias('@web') . '/images/logo.png', [
                     'class'          => 'wow fadeIn lazy img-fluid',
                     'data-wow-delay' => '0.5s',
                     'alt'            => Html::encode('Tequeño Mucho'),
@@ -25,12 +25,12 @@ $this->title = 'Tequeño Mucho';
                 </p>
             </div>
             <div class="row justify-content-center">
-                <?= Html::img('images/teque02.jpg', [
+                <?= Html::img(Yii::getAlias('@web') . '/images/teque02.jpg', [
                     'class'          => 'wow fadeInLeft lazy img-fluid m20',
                     'data-wow-delay' => '0.5s',
                     'alt'            => Html::encode('Tequeño Mucho'),
                 ]) ?>
-                <?= Html::img('images/teque03.jpg', [
+                <?= Html::img(Yii::getAlias('@web') . '/images/teque03.jpg', [
                     'class'          => 'wow fadeInRight lazy img-fluid m20',
                     'data-wow-delay' => '0.5s',
                     'alt'            => Html::encode('Tequeño Mucho'),

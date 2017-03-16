@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
 
                         <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                            'template' => '<div class="row"><div class="col-lg-6 p0">{input}</div><div class="col-lg-3">{image}</div></div>',
+                            'template' => '<div class="row"><div class="col-xs-6 p0">{input}</div><div class="col-xs-3">{image}</div></div>',
                         ]) ?>
 
                         <div class="form-group">
@@ -51,8 +51,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="col-lg-6 offset-lg-1">
                     <ul>
                         <li><h3><i class="fa fa-lg fa-instagram m20 ml20"></i><?= Html::encode('@tequemucho') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-facebook m20 ml40"></i><?= Html::encode('Tequemucho') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-twitter m20 ml60"></i><?= Html::encode('@tequemucho') ?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-twitter m20 ml40"></i><?= Html::encode('@tequemucho') ?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-facebook m20 ml60"></i><?= Html::encode('Tequemucho') ?></h3></li>
                         <li><h3><i class="fa fa-lg fa-phone m20 ml80"></i><?= Html::encode('0212-6684108') ?></h3></li>
                         <li><h3><i class="fa fa-lg fa-envelope-o m20 ml100"></i><?= Html::encode('tequemucho@gmail.com') ?></h3></li>
                     </ul>

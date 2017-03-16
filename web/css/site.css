@@ -72,15 +72,20 @@ body {
 }
 #contact-form {
     margin-left: 30px;
+    margin-right: 30px;
 }
 #contactform-verifycode {
     margin-right: 50px;
 }
 
 .footer {
-    color : #9d9d9d;
-    background-color: #222;
-    border-top: 1px solid #ddd;
+    background: -webkit-linear-gradient(#222, #111); 
+    background: -o-linear-gradient(#222, #111);
+    background: -moz-linear-gradient(#222, #111); 
+    background: linear-gradient(#222, #111);
+    /*color : #9d9d9d;*/
+    background-color: #111;
+    /*border-top: 1px solid #ddd;*/
     padding: 20px 0 5px 0;
     text-align: center;
 }
@@ -186,6 +191,7 @@ a.desc:after {
     margin: 0;
 }
 
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;
@@ -194,7 +200,12 @@ a.desc:after {
         padding: 10px 15px;
     }
 }
-
+.navbar {
+    background: -webkit-linear-gradient(#111, #222); 
+    background: -o-linear-gradient(#111, #222);
+    background: -moz-linear-gradient(#111, #222); 
+    background: linear-gradient(#111, #222);
+}
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
     text-decoration: none;
@@ -219,12 +230,12 @@ a.desc:after {
     height: 600px;
 }
 .body-content {
-    background-color: #222;
+    /*background-color: #111;*/
 }
 .site-index p {
     padding: 20px 45px 20px 45px;
 }
 .site-contact {
-    background-color: #222;
+    /*background-color: #111;*/
     padding: 30px 50px 30px 50px;
 }
