@@ -29,7 +29,6 @@ class AppAsset extends AssetBundle
         'js/bootstrap.min.js',
         'js/mdb.min.js',
         'js/parallax.min.js',
-        '../vendor/bower/jquery_lazyload/jquery.lazyload.js',
         'js/script.js',
     ];
     public $depends = [

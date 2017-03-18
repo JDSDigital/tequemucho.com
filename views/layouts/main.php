@@ -31,7 +31,7 @@ AppAsset::register($this);
         'brandLabel' => Html::img(Yii::getAlias('@web') . '/images/logo-banner.png', ['class' => 'img-fluid logo-banner']),
         'brandUrl'   => Yii::$app->homeUrl,
         'options'    => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-top fixed-top scrolling-navbar',
         ],
     ]);
     echo Nav::widget([
