@@ -1,5 +1,5 @@
 html,
-body, .view {
+body{
     height: 100%;
     /*font-family: 'Source Sans Pro', sans-serif;*/
     /*font-family: 'Arsenal', sans-serif;*/
@@ -7,6 +7,37 @@ body, .view {
 }
 body {
     background-color: #000;
+}
+.parallax{
+    height: 100vh;
+}
+/* Carousel*/
+
+.carousel,
+.carousel-item,
+.active {
+    height: 100%;
+}
+.carousel-item h1 {
+    font-size: 4em;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}
+
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .wrap {
@@ -194,7 +225,7 @@ a.desc:after {
 }
 .navbar {
     margin: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
 }
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
@@ -225,38 +256,9 @@ a.desc:after {
         background-color: #212121;
     }
 }
-/* Carousel*/
-        
-.carousel,
-.carousel-item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-/*Caption*/
-
-.flex-center {
-    color: #fff;
-}
-
-@media (min-width: 776px) {
-    .carousel .view ul li {
-        display: inline;
-    }
-    .carousel .view .full-bg-img ul li .flex-item {
-        margin-bottom: 1.5rem;
-    }
-}
 
 .logo-banner {
     max-height :40px;
-}
-
-.parallax {
-    height: 600px;
 }
 .body-content {
     /*background-color: #111;*/

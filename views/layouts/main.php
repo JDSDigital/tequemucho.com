@@ -9,7 +9,7 @@ use yii\bootstrap\NavBar;
 use app\assets\AppAsset;
 
 
-$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => 'favicon.png']);
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::getAlias('@web') . '/favicon.png']);
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>

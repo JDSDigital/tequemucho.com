@@ -22,22 +22,18 @@ $this->title = 'Tequeño Mucho';
     <div class="carousel-inner" role="listbox">
 
         <!-- First slide -->
-        <div class="carousel-item active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-size: cover;">
+        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
                 <ul class="animated fadeInUp col-md-12">
                     <li>
-                        <h1 class="h1-responsive flex-item">Material Design for Bootstrap 4</h1>
-                        <li>
-                            <p class="flex-item">The most powerful and free UI KIT for Bootstrap</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg flex-item">Sign up!</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg flex-item">Learn more</a>
-                        </li>
+                        <?= Html::img(Yii::getAlias('@web') . '/images/logo-nobg.png', [
+                            'class'          => 'wow lazy img-fluid m0a',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                    </li>
                 </ul>
             </div>
             <!-- /.Caption -->
@@ -46,19 +42,15 @@ $this->title = 'Tequeño Mucho';
         <!-- /.First slide -->
 
         <!-- Second slide -->
-        <div class="carousel-item view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-size: cover;">
+        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
                 <ul class="animated fadeInUp col-md-12">
                     <li>
-                        <h1 class="h1-responsive">Lots of tutorials at your disposal</h1>
-                    </li>
-                    <li>
-                        <p>And all of them are FREE!</p>
-                    </li>
-                    <li>
-                        <a target="_blank" href="http://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg">Start learning</a>
+                        <h1 class="h1-responsive flex-item">Ingregientes 100% Naturales</h1>
+                    </li><li>
+                        <h2 class="flex-item">Tequeños de Masas y Rellenos Especiales</h2>
                     </li>
                 </ul>
             </div>
@@ -66,7 +58,7 @@ $this->title = 'Tequeño Mucho';
 
         </div>
         <!-- /.Second slide -->
-        
+
     </div>
     <!--/.Slides-->
 
@@ -85,13 +77,6 @@ $this->title = 'Tequeño Mucho';
 <div class="container">
     <div class="site-index">
         <div class="body-content">
-            <div class="row justify-content-center">
-                <?= Html::img(Yii::getAlias('@web') . '/images/logo.png', [
-                    'class'          => 'wow fadeIn lazy img-fluid',
-                    'data-wow-delay' => '0.5s',
-                    'alt'            => Html::encode('Tequeño Mucho'),
-                ]) ?>
-            </div>
             <div class="row justify-content-center">
                 <h1 class="wow fadeIn lazy"><?= Html::encode('Lorem Ipsum') ?></h1>
                 <p class="wow fadeIn lazy">
