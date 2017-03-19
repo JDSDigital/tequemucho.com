@@ -15,7 +15,7 @@ body {
 
 .carousel,
 .carousel-item,
-.active {
+.carousel-inner > .active {
     height: 100%;
 }
 .carousel-item h1 {
@@ -76,6 +76,9 @@ body {
 .p0 {
     padding: 0;
 }
+.p20 {
+    padding: 20px;
+}
 .m20 {
     margin: 20px;
 }
@@ -99,6 +102,12 @@ body {
     color: #FFF !important;
 }
 .control-label {
+    color: #DDD;
+}
+.md-form {
+    color: #FFF;
+}
+.md-form > label {
     color: #DDD;
 }
 #contact-form {
@@ -268,5 +277,9 @@ a.desc:after {
 }
 .site-contact {
     /*background-color: #111;*/
-    padding: 30px 50px 30px 50px;
+    padding: 100px 50px 30px 50px;
+}
+.site-gallery {
+    /*background-color: #111;*/
+    padding: 100px 50px 30px 50px;
 }

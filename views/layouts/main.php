@@ -48,11 +48,6 @@ AppAsset::register($this);
                 'options' => ['class' => 'list-inline-item'],
             ],
             [
-                'label' => 'Quienes Somos',
-                'url' => ['/site/about'],
-                'options' => ['class' => 'list-inline-item'],
-            ],
-            [
                 'label' => 'Contacto',
                 'url' => ['/site/contact'],
                 'options' => ['class' => 'list-inline-item'],

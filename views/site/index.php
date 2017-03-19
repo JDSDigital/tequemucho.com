@@ -12,7 +12,7 @@ $this->title = 'Tequeño Mucho';
 <!--Carousel Wrapper-->
 <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
     <!--Indicators-->
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators m0a p20">
         <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-3" data-slide-to="1"></li>
     </ol>
@@ -22,7 +22,7 @@ $this->title = 'Tequeño Mucho';
     <div class="carousel-inner" role="listbox">
 
         <!-- First slide -->
-        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-size: cover;">
+        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
@@ -42,15 +42,15 @@ $this->title = 'Tequeño Mucho';
         <!-- /.First slide -->
 
         <!-- Second slide -->
-        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-size: cover;">
+        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
                 <ul class="animated fadeInUp col-md-12">
                     <li>
-                        <h1 class="h1-responsive flex-item">Ingregientes 100% Naturales</h1>
+                        <h1 class="h1-responsive flex-item"><?= Html::encode('Ingredientes 100% Naturales') ?></h1>
                     </li><li>
-                        <h2 class="flex-item">Tequeños de Masas y Rellenos Especiales</h2>
+                        <h2 class="flex-item"><?= Html::encode('Tequeños de Masas y Rellenos Especiales') ?></h2>
                     </li>
                 </ul>
             </div>
@@ -65,11 +65,11 @@ $this->title = 'Tequeño Mucho';
     <!--Controls-->
     <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only"><?= Html::encode('Anterior') ?></span>
     </a>
     <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only"><?= Html::encode('Siguiente') ?></span>
     </a>
     <!--/.Controls-->
 </div>

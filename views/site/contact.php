@@ -28,19 +28,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="col-lg-5">
 
                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-
-                        <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
-                        <?= $form->field($model, 'email') ?>
-
-                        <?= $form->field($model, 'subject') ?>
-
-                        <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
-
-                        <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                            'template' => '<div class="row"><div class="col-xs-6 p0">{input}</div><div class="col-xs-3">{image}</div></div>',
-                        ]) ?>
-
+                        <div class="md-form">
+                            <?= $form->field($model, 'name') ?>
+                        </div>
+                        <div class="md-form">
+                            <?= $form->field($model, 'email') ?>
+                        </div>
+                        <div class="md-form">
+                            <?= $form->field($model, 'subject') ?>
+                        </div>
+                        <div class="md-form">
+                            <?= $form->field($model, 'body')->textarea(['rows' => 6, 'placeholder' => 'Mensaje'])->label(false) ?>
+                        </div>
+                        <div class="md-form">
+                            <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                                'template' => '<div class="row"><div class="col-xs-6 p0">{input}</div><div class="col-xs-3">{image}</div></div>',
+                                'options' => ['placeholder' => 'Código de verificación'],
+                            ])->label(false) ?>
+                        </div>
                         <div class="form-group">
                             <?= Html::submitButton('Submit', ['class' => 'btn btn-primary m0a', 'name' => 'contact-button']) ?>
                         </div>

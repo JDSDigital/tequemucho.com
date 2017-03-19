@@ -114,12 +114,12 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays about page.
+     * Displays gallery page.
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionGallery()
     {
-        return $this->render('about');
+        return $this->render('gallery');
     }
 }
