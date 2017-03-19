@@ -84,16 +84,24 @@ $this->title = 'Tequeño Mucho';
                 </p>
             </div>
             <div class="row justify-content-center">
-                <?= Html::img(Yii::getAlias('@web') . '/images/teque02.jpg', [
-                    'class'          => 'wow fadeInLeft lazy img-fluid m20',
-                    'data-wow-delay' => '0.5s',
-                    'alt'            => Html::encode('Tequeño Mucho'),
-                ]) ?>
-                <?= Html::img(Yii::getAlias('@web') . '/images/teque03.jpg', [
-                    'class'          => 'wow fadeInRight lazy img-fluid m20',
-                    'data-wow-delay' => '0.5s',
-                    'alt'            => Html::encode('Tequeño Mucho'),
-                ]) ?>
+                <div class="view hm-zoom">
+                    <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                        <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque02.jpg', [
+                            'class'          => 'wow fadeInLeft lazy img-fluid m20',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                    </a>
+                </div>
+                <div class="view hm-zoom">
+                    <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                        <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque03.jpg', [
+                            'class'          => 'wow fadeInRight lazy img-fluid m20',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                    </a>
+                </div>
             </div>
             <div class="row justify-content-center">
                 <p class="wow fadeIn lazy">

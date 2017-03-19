@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\FileHelper;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
@@ -118,8 +119,14 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionGallery()
+    public function actionGallery($images = [])
     {
-        return $this->render('gallery');
+        $files = FileHelper::findFiles(Yii::getAlias('@app') .'/web/images/gallery');
+        foreach($files as $file) {
+            $array = explode(DIRECTORY_SEPARATOR, $file);
+            $image = array_pop($array);
+            array_push($images, '/images/gallery/'.$image);
+        }
+        return $this->render('gallery', ['images' => $images]);
     }
 }

@@ -3,3 +3,4 @@ $(document).ready(function() {
 });
 
 $('.parallax').parallax({imageSrc: '../images/11.jpg'});
+// $('.carousel').carousel();
