@@ -29,7 +29,7 @@ $this->title = 'Tequeño Mucho';
                 <ul class="animated fadeInUp col-md-12">
                     <li>
                         <?= Html::img(Yii::getAlias('@web') . '/images/logo-nobg.png', [
-                            'class'          => 'wow lazy img-fluid m0a',
+                            'class'          => 'wow lazy flipInX img-fluid m0a',
                             'data-wow-delay' => '0.5s',
                             'alt'            => Html::encode('Tequeño Mucho'),
                         ]) ?>
@@ -85,21 +85,23 @@ $this->title = 'Tequeño Mucho';
             </div>
             <div class="row justify-content-center">
                 <div class="view hm-zoom">
+                    <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque02.jpg', [
+                        'class'          => 'wow fadeInLeft lazy img-fluid m20',
+                        'data-wow-delay' => '0.5s',
+                        'alt'            => Html::encode('Tequeño Mucho'),
+                    ]) ?>
                     <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
-                        <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque02.jpg', [
-                            'class'          => 'wow fadeInLeft lazy img-fluid m20',
-                            'data-wow-delay' => '0.5s',
-                            'alt'            => Html::encode('Tequeño Mucho'),
-                        ]) ?>
+                        <div class="mask waves-effect waves-light"></div>
                     </a>
                 </div>
                 <div class="view hm-zoom">
+                    <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque03.jpg', [
+                        'class'          => 'wow fadeInRight lazy img-fluid m20',
+                        'data-wow-delay' => '0.5s',
+                        'alt'            => Html::encode('Tequeño Mucho'),
+                    ]) ?>
                     <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
-                        <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque03.jpg', [
-                            'class'          => 'wow fadeInRight lazy img-fluid m20',
-                            'data-wow-delay' => '0.5s',
-                            'alt'            => Html::encode('Tequeño Mucho'),
-                        ]) ?>
+                        <div class="mask waves-effect waves-light"></div>
                     </a>
                 </div>
             </div>
