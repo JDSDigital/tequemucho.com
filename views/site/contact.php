@@ -13,9 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
     <div class="site-contact">
-        <h1><?= Html::encode($this->title) ?></h1>
-        <p><?= Html::encode('¡Escríbenos y síguenos en las redes sociales!') ?></p>
-
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
             <div class="alert alert-success">
@@ -25,7 +22,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php endif; ?>
 
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
+
+                    <h1><?= Html::encode($this->title) ?></h1>
+                    <p><?= Html::encode('¡Escríbenos y síguenos en las redes sociales!') ?></p>
 
                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
                         <div class="md-form">
@@ -53,14 +53,65 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?php ActiveForm::end(); ?>
 
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <ul>
-                        <li><h3><i class="fa fa-lg fa-instagram m20 ml20"></i><?= Html::encode('@tequemucho') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-twitter m20 ml40"></i><?= Html::encode('@tequemucho') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-facebook m20 ml60"></i><?= Html::encode('Tequemucho') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-phone m20 ml80"></i><?= Html::encode('0212-6684108') ?></h3></li>
-                        <li><h3><i class="fa fa-lg fa-envelope-o m20 ml100"></i><?= Html::encode('tequemucho@gmail.com') ?></h3></li>
-                    </ul>
+                <div class="col-lg-6">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.Indicators-->
+
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <!--First slide-->
+                            <div class="carousel-item carousel-contact active">
+                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/01.jpg', [
+                                    'class' => 'img-fluid',
+                                ]) ?>
+                            </div>
+                            <!--/First slide-->
+
+                            <!--Second slide-->
+                            <div class="carousel-item carousel-contact">
+                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/02.jpg', [
+                                    'class' => 'img-fluid',
+                                ]) ?>
+                            </div>
+                            <!--/Second slide-->
+
+                            <!--Third slide-->
+                            <div class="carousel-item carousel-contact">
+                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/03.jpg', [
+                                    'class' => 'img-fluid',
+                                ]) ?>
+                            </div>
+                            <!--/Third slide-->
+                        </div>
+                        <!--/.Slides-->
+
+                        <!--Controls-->
+                        <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                            <span class="icon-prev" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                            <span class="icon-next" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
+                    <!--<ul>
+                        <li><h3><i class="fa fa-lg fa-instagram m20 ml20"></i><?/*= Html::encode('@tequemucho') */?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-twitter m20 ml40"></i><?/*= Html::encode('@tequemucho') */?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-facebook m20 ml60"></i><?/*= Html::encode('Tequemucho') */?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-phone m20 ml80"></i><?/*= Html::encode('0212-6684108') */?></h3></li>
+                        <li><h3><i class="fa fa-lg fa-envelope-o m20 ml100"></i><?/*= Html::encode('tequemucho@gmail.com') */?></h3></li>
+                    </ul>-->
                 </div>
             </div>
 

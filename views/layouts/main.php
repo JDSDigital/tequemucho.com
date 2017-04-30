@@ -36,6 +36,30 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right list-inline flex-row navbar-border'],
+        'encodeLabels' => false,
+        'items'   => [
+            [
+                'label' => '<i class="fa fa-lg fa-instagram"></i>',
+                'url' => 'https://www.instagram.com/tequemucho/',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
+            [
+                'label' => '<i class="fa fa-lg fa-twitter"></i>',
+                'url' => 'https://twitter.com/tequemucho',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
+            [
+                'label' => '<i class="fa fa-lg fa-facebook"></i>',
+                'url' => 'https://es-la.facebook.com/Tequemucho/',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right list-inline flex-row navbar-border'],
         'items'   => [
             [
                 'label' => 'Inicio',

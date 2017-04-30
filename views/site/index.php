@@ -4,8 +4,8 @@
 
 use yii\helpers\Html;
 
-$img1 = Yii::getAlias('@web') . '/images/11.jpg';
-$img2 = Yii::getAlias('@web') . '/images/03.jpg';
+$img1 = Yii::getAlias('@web') . '/images/slider/jumbo/1.jpg';
+$img2 = Yii::getAlias('@web') . '/images/slider/jumbo/2.jpg';
 $this->title = 'Tequeño Mucho';
 ?>
 <!--<div class="parallax"></div>-->
@@ -19,10 +19,10 @@ $this->title = 'Tequeño Mucho';
     <!--/.Indicators-->
 
     <!--Slides-->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner carousel-index" role="listbox">
 
         <!-- First slide -->
-        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat center; background-size: cover;">
+        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
@@ -42,7 +42,7 @@ $this->title = 'Tequeño Mucho';
         <!-- /.First slide -->
 
         <!-- Second slide -->
-        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat center; background-size: cover;">
+        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
@@ -78,31 +78,47 @@ $this->title = 'Tequeño Mucho';
     <div class="site-index">
         <div class="body-content">
             <div class="row justify-content-center">
-                <h1 class="wow fadeIn lazy"><?= Html::encode('Lorem Ipsum') ?></h1>
+                <div class="view hm-zoom">
+                    <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/03.jpg', [
+                        'class'          => 'wow zoomInUp lazy img-fluid m20',
+                        'data-wow-delay' => '0.5s',
+                        'alt'            => Html::encode('Tequeño Mucho'),
+                    ]) ?>
+                    <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <h1 class="wow fadeIn lazy"><?= Html::encode('Tequeño Mucho') ?></h1>
                 <p class="wow fadeIn lazy">
                     <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
                 </p>
             </div>
             <div class="row justify-content-center">
-                <div class="view hm-zoom">
-                    <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque02.jpg', [
-                        'class'          => 'wow fadeInLeft lazy img-fluid m20',
-                        'data-wow-delay' => '0.5s',
-                        'alt'            => Html::encode('Tequeño Mucho'),
-                    ]) ?>
-                    <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
-                        <div class="mask waves-effect waves-light"></div>
-                    </a>
+                <div class="col-lg-6">
+                    <div class="view hm-zoom">
+                        <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/01.jpg', [
+                            'class'          => 'wow fadeInLeft lazy img-fluid m20',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                        <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/01.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
                 </div>
-                <div class="view hm-zoom">
-                    <?= Html::img(Yii::getAlias('@web') . '/images/gallery/teque03.jpg', [
-                        'class'          => 'wow fadeInRight lazy img-fluid m20',
-                        'data-wow-delay' => '0.5s',
-                        'alt'            => Html::encode('Tequeño Mucho'),
-                    ]) ?>
-                    <a href="<?= Yii::getAlias('@web') . '/images/gallery/teque03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
-                        <div class="mask waves-effect waves-light"></div>
-                    </a>
+                <div class="col-lg-6">
+                    <div class="view hm-zoom">
+                        <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/02.jpg', [
+                            'class'          => 'wow fadeInRight lazy img-fluid m20',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                        <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center">
