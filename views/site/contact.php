@@ -10,6 +10,8 @@ use yii\captcha\Captcha;
 
 $this->title = 'Contacto';
 $this->params['breadcrumbs'][] = $this->title;
+$i = 0;
+$j = 0;
 ?>
 <div class="container">
     <div class="site-contact">
@@ -58,37 +60,24 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
                         <!--Indicators-->
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-1" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+                            <?php foreach($images as $image): ?>
+                                <li data-target="#carousel-example-1" data-slide-to="<?= $i ?>" class="<?= ($i==0) ? 'active' : '' ?>"></li>
+                                <?php $i++; ?>
+                            <?php endforeach; ?>
                         </ol>
                         <!--/.Indicators-->
 
                         <!--Slides-->
                         <div class="carousel-inner" role="listbox">
-                            <!--First slide-->
-                            <div class="carousel-item carousel-contact active">
-                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/01.jpg', [
-                                    'class' => 'img-fluid',
-                                ]) ?>
-                            </div>
-                            <!--/First slide-->
+                            <?php foreach($images as $image): ?>
+                                <div class="carousel-item carousel-contact <?= ($j==0) ? 'active' : '' ?>">
+                                    <?= Html::img(Yii::getAlias('@web') . $image, [
+                                        'class' => 'img-fluid',
+                                    ]) ?>
+                                </div>
+                                <?php $j++; ?>
+                            <?php endforeach; ?>
 
-                            <!--Second slide-->
-                            <div class="carousel-item carousel-contact">
-                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/02.jpg', [
-                                    'class' => 'img-fluid',
-                                ]) ?>
-                            </div>
-                            <!--/Second slide-->
-
-                            <!--Third slide-->
-                            <div class="carousel-item carousel-contact">
-                                <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/03.jpg', [
-                                    'class' => 'img-fluid',
-                                ]) ?>
-                            </div>
-                            <!--/Third slide-->
                         </div>
                         <!--/.Slides-->
 

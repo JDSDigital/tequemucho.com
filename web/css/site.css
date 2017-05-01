@@ -7,6 +7,7 @@ body{
 }
 body {
     background-color: #000;
+    /*background-color: #5224fc;*/
 }
 .parallax{
     height: 100vh;
@@ -61,14 +62,15 @@ body {
 .wrap > .container h1 {
     margin-top: 20px;
     /*font-family: 'Source Sans Pro', sans-serif !important;*/
-    font-family: 'Arsenal', sans-serif !important;
-    /*font-family: 'Lora', serif !important;*/
+    /*font-family: 'Arsenal', sans-serif !important;*/
+    font-family: 'Oswald', sans-serif !important;
     font-size: 4em;
+    color : #fca824;
 }
 .wrap > .container p {
-    font-family: 'Source Sans Pro', sans-serif !important;
-    /*font-family: 'Arsenal', sans-serif !important;*/
-    /*font-family: 'Lora', serif !important;*/
+    /*font-family: 'Source Sans Pro', sans-serif !important;*/
+    font-family: 'Arsenal', sans-serif !important;
+    /*font-family: 'Oswald', sans-serif !important;*/
     font-size: 1.2em;
 }
 
@@ -295,7 +297,12 @@ a.desc:after {
     padding: 100px 50px 30px 50px;
 }
 .form-control:focus {
-    border-color: #4285F4;
+    border-color: #fca824;
+    box-shadow: 0 1px 0 0 #fca824;
+}
+input[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #fca824;
+    box-shadow: 0 1px 0 0 #fca824;
 }
 .vertical-center {
     min-height: 100%;  /* Fallback for vh unit */
@@ -337,4 +344,10 @@ a.desc:after {
     -ms-flex-pack : center;
     -webkit-justify-content : center;
     justify-content : center;
+}
+.fancybox-thumbs {
+    background-color: inherit;
+}
+.fancybox-thumbs>ul>li {
+    border: none;
 }

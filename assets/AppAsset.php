@@ -24,11 +24,11 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/jquery-3.1.1.min.js',
+//        'js/jquery-3.1.1.min.js',
         'js/tether.min.js',
         'js/bootstrap.min.js',
         'js/mdb.min.js',
-        'js/parallax.min.js',
+//        'js/parallax.min.js',
         'js/script.js',
     ];
     public $depends = [

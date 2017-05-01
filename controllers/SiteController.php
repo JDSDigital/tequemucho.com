@@ -101,16 +101,27 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionContact()
+    public function actionContact($images = [])
     {
         $model = new ContactForm();
+
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
 
             return $this->refresh();
         }
+
+        $files = FileHelper::findFiles(Yii::getAlias('@app') .'/web/images/slider/contact/');
+
+        foreach($files as $file) {
+            $array = explode(DIRECTORY_SEPARATOR, $file);
+            $image = array_pop($array);
+            array_push($images, '/images/slider/contact/'.$image);
+        }
+
         return $this->render('contact', [
-            'model' => $model,
+            'model'  => $model,
+            'images' => $images,
         ]);
     }
 
