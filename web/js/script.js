@@ -19,6 +19,7 @@ $(document).ready(function() {
             hideOnClosing : true   // Hide thumbnail grid when closing animation starts
         }
     });
+    $('#loader-wrapper').hide();
 });
 
 //$('.parallax').parallax({imageSrc: '../images/11.jpg'});
