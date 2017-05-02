@@ -140,4 +140,14 @@ class SiteController extends Controller
         }
         return $this->render('gallery', ['images' => $images]);
     }
+
+    /**
+     * Displays product page.
+     *
+     * @return string
+     */
+    public function actionProducts()
+    {
+        return $this->render('products');
+    }
 }

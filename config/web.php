@@ -45,6 +45,14 @@ $config = [
             'rules' => [
             ],
         ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'sourcePath' => null,
+                    'js'         => [],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];

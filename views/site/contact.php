@@ -49,7 +49,7 @@ $j = 0;
                             ])->label(false) ?>
                         </div>
                         <div class="form-group">
-                            <?= Html::submitButton('Submit', ['class' => 'btn btn-primary m0a', 'name' => 'contact-button']) ?>
+                            <?= Html::submitButton('Submit', ['class' => 'btn m0a', 'name' => 'contact-button']) ?>
                         </div>
 
                     <?php ActiveForm::end(); ?>

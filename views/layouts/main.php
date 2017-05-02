@@ -79,6 +79,11 @@ AppAsset::register($this);
                 'options' => ['class' => 'list-inline-item'],
             ],
             [
+                'label' => 'Productos',
+                'url' => ['/site/products'],
+                'options' => ['class' => 'list-inline-item'],
+            ],
+            [
                 'label' => 'Galería',
                 'url' => ['/site/gallery'],
                 'options' => ['class' => 'list-inline-item'],
