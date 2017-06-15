@@ -58,7 +58,7 @@ class ContactForm extends Model
      */
     public function contact()
     {
-        if($this->validate()){
+        /*if($this->validate()){
             Yii::$app->mailer->compose()
                 ->setTo('jdsosa@gmail.com')
                 ->setFrom([$this->email => $this->name])
@@ -67,7 +67,7 @@ class ContactForm extends Model
                 ->send();
 
             return true;
-        }
+        }*/
 
         return false;
     }
