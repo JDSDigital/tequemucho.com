@@ -316,21 +316,45 @@ body {
 #contactform-verifycode {
     margin-right: 50px;
 }
-
-.footer {
-    /*color : #9d9d9d;*/
+.logo-footer {
+    max-height: 150px;
+}
+.btn-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.btn-twitter {
+    background-color: #0084b4;
+}
+.btn-facebook {
+    background-color: #3b5998;
+}
+.footer-main {
     background-color: #212121;
-    /*border-top: 1px solid #ddd;*/
+    padding: 20px;
+}
+.footer-main i {
+    font-size: 2em !important;
+}
+.footer-left {
+    display: flex;
+    position: relative;
+}
+.footer-contact, .footer-right {
+    margin: auto;
+}
+.footer-rights {
+    background-color: #000;
     padding: 20px 0 5px 0;
     text-align: center;
 }
-
-footer p {
+.footer-rights p {
     margin: 0;
     padding: 0;
 }
-
-footer a {
+.footer-rights a {
     color : #9d9d9d;
     transition:.5s;
     -o-transition:.5s;
@@ -338,7 +362,7 @@ footer a {
     -moz-transition:.5s;
     -webkit-transition:.5s;
 }
-footer a:hover {
+.footer-rights a:hover {
     color: #fca824;
     transition:.5s;
     -o-transition:.5s;
@@ -446,6 +470,10 @@ a.desc:after {
 .navbar-nav > .active > a {
     color : #fca824 !important;
     background-color: transparent !important;
+}
+.navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .navbar-nav > li > a:hover {
     color : #fca824 !important;

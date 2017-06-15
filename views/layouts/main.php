@@ -51,29 +51,6 @@ AppAsset::register($this);
         'encodeLabels' => false,
         'items'   => [
             [
-                'label' => '<i class="fa fa-lg fa-instagram"></i>',
-                'url' => 'https://www.instagram.com/tequemucho/',
-                'linkOptions' => ['target' => '_blank'],
-                'options' => ['class' => 'list-inline-item top-icons'],
-            ],
-            [
-                'label' => '<i class="fa fa-lg fa-twitter"></i>',
-                'url' => 'https://twitter.com/tequemucho',
-                'linkOptions' => ['target' => '_blank'],
-                'options' => ['class' => 'list-inline-item top-icons'],
-            ],
-            [
-                'label' => '<i class="fa fa-lg fa-facebook"></i>',
-                'url' => 'https://es-la.facebook.com/Tequemucho/',
-                'linkOptions' => ['target' => '_blank'],
-                'options' => ['class' => 'list-inline-item top-icons'],
-            ],
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right list-inline flex-row navbar-border'],
-        'items'   => [
-            [
                 'label' => 'Inicio',
                 'url' => ['/site/index'],
                 'options' => ['class' => 'list-inline-item'],
@@ -93,6 +70,24 @@ AppAsset::register($this);
                 'url' => ['/site/contact'],
                 'options' => ['class' => 'list-inline-item'],
             ],
+            [
+                'label' => '<i class="fa fa-lg fa-instagram"></i>',
+                'url' => 'https://www.instagram.com/tequemucho/',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
+            [
+                'label' => '<i class="fa fa-lg fa-twitter"></i>',
+                'url' => 'https://twitter.com/tequemucho',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
+            [
+                'label' => '<i class="fa fa-lg fa-facebook"></i>',
+                'url' => 'https://es-la.facebook.com/Tequemucho/',
+                'linkOptions' => ['target' => '_blank'],
+                'options' => ['class' => 'list-inline-item top-icons'],
+            ],
         ],
     ]);
     NavBar::end();
@@ -100,15 +95,42 @@ AppAsset::register($this);
     <?= $content ?>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p>© <?= date('Y') ?> Tequeño Mucho. Todos los derechos reservados.</p>
-		<p>Creado por <a href="https://github.com/JDSDigital" target="_blank">JDSDigital</a></p>
-		<p>
-            <a href="https://github.com/JDSDigital" target="_blank">
-                <?= Html::img(Yii::getAlias('@web') . '/images/GitHub-Mark-Light-32px.png') ?>
-            </a>
-        </p>
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-left">
+                    <div class="col-xs-6">
+                        <?= Html::img(Yii::getAlias('@web') . '/images/logo-nobg.png', [
+                            'class'          => 'img-fluid logo-footer m0a',
+                            'data-wow-delay' => '0.5s',
+                            'alt'            => Html::encode('Tequeño Mucho'),
+                        ]) ?>
+                    </div>
+                    <div class="col-xs-6 text-left footer-contact">
+                        <p><?= Html::encode('+58 212 668 4108') ?></p>
+                        <p><?= Html::encode('tequemucho@gmail.com') ?></p>
+                    </div>
+                </div>
+                <div class="col-md-6 footer-right text-center">
+                    <h5>¡Síguenos en nuestras redes sociales!</h5>
+                    <a class="btn btn-instagram" href="https://www.instagram.com/tequemucho/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+                    <a class="btn btn-twitter" href="https://twitter.com/tequemucho" target="_blank"><i class="fa fa-lg fa-twitter"></i></a>
+                    <a class="btn btn-facebook" href="https://es-la.facebook.com/Tequemucho/" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-rights">
+        <div class="container">
+            <p>© <?= date('Y') ?> Tequeño Mucho. Todos los derechos reservados.</p>
+            <p>Creado por <a href="https://github.com/JDSDigital" target="_blank">JDSDigital</a></p>
+            <p>
+                <a href="https://github.com/JDSDigital" target="_blank">
+                    <?= Html::img(Yii::getAlias('@web') . '/images/GitHub-Mark-Light-32px.png') ?>
+                </a>
+            </p>
+        </div>
     </div>
 </footer>
 <?php $this->endBody() ?>

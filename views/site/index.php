@@ -10,7 +10,7 @@ $this->title = 'Tequeño Mucho';
 ?>
 <!--<div class="parallax"></div>-->
 <!--Carousel Wrapper-->
-<div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+<div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators m0a p20">
         <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
@@ -19,10 +19,10 @@ $this->title = 'Tequeño Mucho';
     <!--/.Indicators-->
 
     <!--Slides-->
-    <div class="carousel-inner carousel-index" role="listbox">
+    <div class="carousel-inner" role="listbox">
 
         <!-- First slide -->
-        <div class="carousel-item carousel-item-1 active view hm-black-light" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="carousel-item carousel-item-1 active view hm-black-light carousel-index" style="background-image: url('<?= $img1 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">
@@ -42,7 +42,7 @@ $this->title = 'Tequeño Mucho';
         <!-- /.First slide -->
 
         <!-- Second slide -->
-        <div class="carousel-item carousel-item-2 view hm-black-light" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="carousel-item carousel-item-2 view hm-black-light carousel-index" style="background-image: url('<?= $img2 ?>'); background-repeat: no-repeat; background-position: center; background-size: cover;">
 
             <!-- Caption -->
             <div class="full-bg-img flex-center white-text">

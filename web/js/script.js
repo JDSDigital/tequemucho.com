@@ -3,7 +3,7 @@ $(document).ready(function() {
     /*$('#carousel').carousel({
         interval: 100
     });*/
-    $('#carousel').carousel();
+    //$('#carousel').carousel();
 
     $("[data-fancybox]").fancybox({
         image : {

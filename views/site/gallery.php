@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="site-gallery">
         <h1><?= Html::encode($this->title) ?></h1>
         <?php foreach($images as $image): ?>
-            <div class="col-lg-4 view hm-zoom">
+            <div class="col-md-4 col-sm-6 col-xs-12 view hm-zoom">
                 <?= Html::img(Yii::getAlias('@web') . $image, [
                     'class'          => 'wow zoomIn lazy img-fluid m20',
                     'data-wow-delay' => '0.5s',
