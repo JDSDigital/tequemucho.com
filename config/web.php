@@ -22,7 +22,7 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'mailer' => [
+        /*'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
@@ -36,7 +36,7 @@ $config = [
                 'port' => '587', // El puerto 25 es un puerto común también
                 'encryption' => 'tls', // Es usado también a menudo, revise la configuración del servidor
             ]
-        ],
+        ],*/
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
