@@ -15,12 +15,18 @@ $j = 0;
 ?>
 <div class="container">
     <div class="site-contact">
-        <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+        <?php if (Yii::$app->session->hasFlash('success')): ?>
 
             <div class="alert alert-success">
-                <?= Html::encode('Gracias por escribirnos. Nos comunicaremos con Usted en breve.') ?>
+                <?= Yii::$app->session->getFlash('success'); ?>
             </div>
 
+        <?php elseif (Yii::$app->session->hasFlash('error')): ?>
+
+            <div class="alert alert-success">
+                <?= Yii::$app->session->getFlash('error'); ?>
+            </div>
+            
         <?php endif; ?>
 
             <div class="row">

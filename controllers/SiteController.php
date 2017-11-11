@@ -105,10 +105,26 @@ class SiteController extends Controller
     {
         $model = new ContactForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
+        if ($model->load(Yii::$app->request->post())) {
 
-            return $this->refresh();
+            $email = Yii::$app->mailer->compose()
+                    ->setTo(Yii::$app->params['adminEmail'])
+                    ->setFrom([Yii::$app->params['coreEmail'] => 'Tequeño Mucho Web'])
+                    ->setSubject('Nuevo mensaje de la página web')
+                    ->setHtmlBody("
+<p><b>Nombre:</b> " . $model->name . "</p>
+<p><b>Correo:</b> " . $model->email . "</p>
+<p><b>Asunto:</b> " . $model->subject . "</p>
+<p><b>Mensaje:</b> " . $model->body . "</p>")
+                    ->send();
+
+                    if($email){
+                        Yii::$app->getSession()->setFlash('success','Mensaje enviado correctamente.');
+                    }
+                    else{
+                        Yii::$app->getSession()->setFlash('warning','Error al enviar el mensaje. Por favor intente mas tarde.');
+                    }
+                    return $this->refresh();
         }
 
         $files = FileHelper::findFiles(Yii::getAlias('@app') .'/web/images/slider/contact/');
