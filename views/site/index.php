@@ -80,48 +80,50 @@ $this->title = 'Tequeño Mucho';
 
             <div class="row justify-content-center">
                 <h1 class="wow fadeIn lazy"><?= Html::encode('Tequeño Mucho') ?></h1>
-                <p class="wow fadeIn lazy">
-                    <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
-                </p>
+            </div>
+            <div class="row">
+                <h4 class="wow fadeIn lazy text-center" style="margin: 20px 0">
+                    <?= Html::encode('En Tequeño Mucho nos dedicamos a elaborar los mas deliciosos tequeños, preparados a la perfección con masas especiales de ingredientes 100% naturales, sin colorantes, conservantes ni sabores artificiales. Para brindarte a ti la mejor experiencia de sabor en cualquier ocasión.') ?>
+                </h4>
             </div>
             <div class="row justify-content-center">
                 <div class="view hm-zoom">
-                    <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/03.jpg', [
+                    <?= Html::img(Yii::getAlias('@web') . '/images/03.jpg', [
                         'class'          => 'wow zoomInUp lazy img-fluid m20',
                         'data-wow-delay' => '0.5s',
                         'alt'            => Html::encode('Tequeño Mucho'),
                     ]) ?>
-                    <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                    <a href="<?= Yii::getAlias('@web') . '/images/03.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
                         <div class="mask waves-effect waves-light"></div>
                     </a>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <p class="wow fadeIn lazy">
-                    <?= Html::encode('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor urna. Morbi in augue eu odio aliquam consequat. Pellentesque elementum porttitor elementum. Cras semper porta nibh, id efficitur arcu porta eget. Duis sed nulla sodales, aliquet velit vitae, aliquam tortor. Integer auctor convallis mauris eget molestie. Quisque ullamcorper rhoncus urna, aliquet mollis nisl semper sit amet. Aliquam ornare eu sapien eu venenatis. Nam eget libero tincidunt, ultricies mi id, mollis ligula. Nullam in aliquet leo. Nulla in turpis at justo malesuada tincidunt eget in arcu. Quisque efficitur quis nisi vel volutpat. Mauris varius lacus ornare mattis sagittis. Quisque eleifend volutpat mauris. Donec vulputate felis neque, eget ornare augue scelerisque ac.') ?>
-                </p>
+                <h4 class="wow fadeIn lazy text-center" style="margin: 20px 0">
+                    <?= Html::encode('Sean fiestas, reuniones, matrimonios o divorcios nuestros tequeños le darán un toque distinguido y especial a tus eventos.') ?>
+                </h4>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="view hm-zoom">
-                        <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/01.jpg', [
+                        <?= Html::img(Yii::getAlias('@web') . '/images/01.jpg', [
                             'class'          => 'wow fadeInLeft lazy img-fluid m20',
                             'data-wow-delay' => '0.5s',
                             'alt'            => Html::encode('Tequeño Mucho'),
                         ]) ?>
-                        <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/01.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                        <a href="<?= Yii::getAlias('@web') . '/images/01.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="view hm-zoom">
-                        <?= Html::img(Yii::getAlias('@web') . '/images/slider/contact/02.jpg', [
+                        <?= Html::img(Yii::getAlias('@web') . '/images/02.jpg', [
                             'class'          => 'wow fadeInRight lazy img-fluid m20',
                             'data-wow-delay' => '0.5s',
                             'alt'            => Html::encode('Tequeño Mucho'),
                         ]) ?>
-                        <a href="<?= Yii::getAlias('@web') . '/images/slider/contact/02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
+                        <a href="<?= Yii::getAlias('@web') . '/images/02.jpg' ?>" data-fancybox="index" data-caption="Tequeño Mucho">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
                     </div>

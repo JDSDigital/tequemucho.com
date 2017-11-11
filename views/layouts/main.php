@@ -100,16 +100,19 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-6 footer-left">
-                    <div class="col-xs-6">
-                        <?= Html::img(Yii::getAlias('@web') . '/images/logo-nobg.png', [
-                            'class'          => 'img-fluid logo-footer m0a',
-                            'data-wow-delay' => '0.5s',
-                            'alt'            => Html::encode('Tequeño Mucho'),
-                        ]) ?>
-                    </div>
-                    <div class="col-xs-6 text-left footer-contact">
-                        <p><?= Html::encode('+58 212 668 4108') ?></p>
-                        <p><?= Html::encode('tequemucho@gmail.com') ?></p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <?= Html::img(Yii::getAlias('@web') . '/images/logo-nobg.png', [
+                                'class'          => 'img-fluid logo-footer m0a',
+                                'data-wow-delay' => '0.5s',
+                                'alt'            => Html::encode('Tequeño Mucho'),
+                            ]) ?>
+                        </div>
+                        <div class="col-xs-6 text-left footer-contact">
+                            <p><?= Html::encode('+58 212 668 4108') ?></p>
+                            <p><?= Html::encode('tequemucho@gmail.com') ?></p>
+                            <p><?= Html::encode('¡La historia del tequeño cambió para siempre!') ?></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 footer-right text-center">
